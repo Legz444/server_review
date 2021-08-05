@@ -2,8 +2,11 @@ require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
+
 const app = express();
 const PORT = 3000;
+
+const Item = require('./models/models');
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
